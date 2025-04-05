@@ -23,7 +23,7 @@ conda create -n gaussian_splatting python=3.12 -y
 conda activate gaussian_splatting
 
 # Install PyTorch and related dependencies
-pip3 install torch torchvision torchaudio plyfile
+pip3 install torch torchvision torchaudio plyfile -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # Install CUDA Toolkit and other required libraries
 conda install -y cudatoolkit tqdm
