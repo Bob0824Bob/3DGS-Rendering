@@ -1,37 +1,14 @@
 #!/bin/bash
 
-# 检查 Miniconda 是否已经安装
-if command -v conda &>/dev/null; then
-    echo "Miniconda is already installed. Skipping installation."
-else
-    echo "Miniconda is not installed. Installing now..."
+# Download and install Miniconda
+MINICONDA_INSTALLER=Miniconda3-latest-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/$MINICONDA_INSTALLER -O ~/miniconda.sh
+bash ~/miniconda.sh -b -p $HOME/miniconda
+export PATH="$HOME/miniconda/bin:$PATH"
 
-    # 下载并安装 Miniconda
-    MINICONDA_INSTALLER=Miniconda3-latest-Linux-x86_64.sh
-    wget https://repo.anaconda.com/miniconda/$MINICONDA_INSTALLER -O ~/miniconda.sh
-    bash ~/miniconda.sh -b -p $HOME/miniconda
-    export PATH="$HOME/miniconda/bin:$PATH"
-
-    # 初始化 Conda
-    conda init
-    source ~/.bashrc
-
-    # 清理安装文件
-    rm ~/miniconda.sh
-
-    echo "Miniconda installation completed!"
-fi
-
-
-## Download and install Miniconda
-#MINICONDA_INSTALLER=Miniconda3-latest-Linux-x86_64.sh
-#wget https://repo.anaconda.com/miniconda/$MINICONDA_INSTALLER -O ~/miniconda.sh
-#bash ~/miniconda.sh -b -p $HOME/miniconda
-#export PATH="$HOME/miniconda/bin:$PATH"
-#
-## Initialize Conda and create a new environment
-#conda init
-#source ~/.bashrc
+# Initialize Conda and create a new environment
+conda init
+source ~/.bashrc
 
 
 # Modify Conda to use Tsinghua mirror
