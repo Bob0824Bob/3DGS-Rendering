@@ -19,10 +19,6 @@ echo "channels:
   - defaults
 show_channel_urls: true" > ~/.condarc
 
-# Modify pip to use Tsinghua mirror
-echo "[global]
-index-url = https://pypi.tuna.tsinghua.edu.cn/simple" > ~/.pip/pip.conf
-
 conda create -n gaussian_splatting python=3.12 -y
 conda activate gaussian_splatting
 
