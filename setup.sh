@@ -27,10 +27,10 @@ conda create -n gaussian_splatting python=3.12 -y
 conda activate gaussian_splatting
 
 # Install PyTorch and related dependencies
-pip3 install torch torchvision torchaudio
+pip3 install torch torchvision torchaudio plyfile
 
 # Install CUDA Toolkit and other required libraries
-conda install -y cudatoolkit plyfile tqdm
+conda install -y cudatoolkit tqdm
 
 # Install additional Python dependencies
 pip install submodules/diff-gaussian-rasterization \
