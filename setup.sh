@@ -2,7 +2,7 @@
 
 # Download and install Miniconda
 MINICONDA_INSTALLER=Miniconda3-latest-Linux-x86_64.sh
-wget https://repo.anaconda.com/miniconda/$MINICONDA_INSTALLER -O ~/miniconda.sh
+wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/$MINICONDA_INSTALLER -O ~/miniconda.sh
 bash ~/miniconda.sh -b -p $HOME/miniconda
 export PATH="$HOME/miniconda/bin:$PATH"
 
