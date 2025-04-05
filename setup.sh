@@ -1,9 +1,5 @@
 #!/bin/bash
 
-
-
-#!/bin/bash
-
 # 检查 Miniconda 是否已经安装
 if command -v conda &>/dev/null; then
     echo "Miniconda is already installed. Skipping installation."
