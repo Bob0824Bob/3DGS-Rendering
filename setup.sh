@@ -9,6 +9,20 @@ export PATH="$HOME/miniconda/bin:$PATH"
 # Initialize Conda and create a new environment
 conda init
 source ~/.bashrc
+
+
+# Modify Conda to use Tsinghua mirror
+echo "channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/
+  - defaults
+show_channel_urls: true" > ~/.condarc
+
+# Modify pip to use Tsinghua mirror
+echo "[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple" > ~/.pip/pip.conf
+
 conda create -n gaussian_splatting python=3.12 -y
 conda activate gaussian_splatting
 
