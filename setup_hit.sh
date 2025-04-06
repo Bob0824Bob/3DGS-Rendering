@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#TEST
 # Download and install Miniconda
 MINICONDA_INSTALLER=Miniconda3-latest-Linux-x86_64.sh
 wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/$MINICONDA_INSTALLER -O ~/miniconda.sh
