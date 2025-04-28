@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Jifeng xixixi
+
 #TEST
 # Download and install Miniconda
 MINICONDA_INSTALLER=Miniconda3-latest-Linux-x86_64.sh
