@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Jifeng xixixi
+# Duoduo xixixi
 
 #TEST
 # Download and install Miniconda
