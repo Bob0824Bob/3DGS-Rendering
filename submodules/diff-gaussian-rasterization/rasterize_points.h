@@ -10,6 +10,8 @@
  */
 
 #pragma once
+#include <cstdint>
+#include <cstddef>
 #include <torch/extension.h>
 #include <cstdio>
 #include <tuple>
